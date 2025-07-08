@@ -42,7 +42,9 @@ beforeAll(async () => {
 // Clean up after all tests
 afterAll(async () => {
   await mongoose.disconnect();
-  await mongoServer.stop();
+  if (mongoServer) {
+    await mongoServer.stop();
+  }
 });
 
 // Clean up database between tests
