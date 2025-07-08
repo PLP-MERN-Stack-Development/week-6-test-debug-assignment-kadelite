@@ -3,12 +3,18 @@
 		"db": "^6.0.3",
 		"install": "^0.13.0",
 		"install-all": "^1.1.0",
+		"mongoose": "^8.16.2",
 		"setup": "^0.0.3",
 		"test": "^3.3.0"
 	},
 	"devDependencies": {
-		"@testing-library/react": "^14.0.0",
+		"@babel/preset-env": "^7.28.0",
+		"@babel/preset-react": "^7.27.1",
 		"@testing-library/jest-dom": "^6.0.0",
+		"@testing-library/react": "^14.0.0",
+		"babel-jest": "^30.0.4",
+		"jest": "^30.0.4",
+		"jest-environment-jsdom": "^30.0.4",
 		"supertest": "^6.3.3"
 	},
 	"scripts": {
