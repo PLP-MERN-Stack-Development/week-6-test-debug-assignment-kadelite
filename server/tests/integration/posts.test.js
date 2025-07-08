@@ -8,6 +8,8 @@ const Post = require('../../src/models/Post');
 const User = require('../../src/models/User');
 const { generateToken } = require('../../src/utils/auth');
 
+jest.setTimeout(120000); // Increase timeout for MongoDB download/startup
+
 let mongoServer;
 let token;
 let userId;

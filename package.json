@@ -15,13 +15,17 @@
 		"@testing-library/react": "^14.0.0",
 		"@testing-library/react-hooks": "^8.0.1",
 		"babel-jest": "^30.0.4",
+		"cypress": "^14.5.1",
+		"cypress-image-snapshot": "^4.0.1",
 		"jest": "^30.0.4",
 		"jest-environment-jsdom": "^30.0.4",
 		"mongodb-memory-server": "^10.1.4",
+		"msw": "^2.10.3",
 		"supertest": "^6.3.3"
 	},
 	"scripts": {
 		"test:client": "jest --selectProjects=client",
-		"test:server": "jest --selectProjects=server"
+		"test:server": "jest --selectProjects=server",
+		"test:e2e": "cypress open"
 	}
 }
